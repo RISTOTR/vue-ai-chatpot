@@ -118,6 +118,7 @@ watch(
           "
         />
 
+        
         <div class="h-6 py-1 px-2 text-sm italic">
           <span v-if="usersTyping.length">
             {{ usersTyping.map((user) => user.name).join(" and ") }}

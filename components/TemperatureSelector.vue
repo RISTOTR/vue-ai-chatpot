@@ -6,6 +6,7 @@ defineEmits<{
   (e: "update:modelValue", payload: number): void;
 }>();
 </script>
+
 <template>
   <input
     :value="modelValue"

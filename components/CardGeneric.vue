@@ -19,7 +19,6 @@ const isLoading = computed(() => props.state === "loading");
           Error generating announcement
         </span>
       </h2>
-
       <div v-if="body">
         <hr class="opacity-10 pb-5" />
         <pre class="whitespace-pre-wrap font-sans text-lg">{{ body }}</pre>
@@ -29,7 +28,6 @@ const isLoading = computed(() => props.state === "loading");
           >Import an article to generate an announcement</span
         >
       </div>
-
       <div class="card-actions justify-end" v-if="body">
         <slot></slot>
       </div>
