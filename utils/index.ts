@@ -6,8 +6,8 @@ export async function fetchWithTimeout<T>(
   const controller = new AbortController();
   const id = setTimeout(() => {
     controller.abort();
-    throw new Error("Requet timed out");
-  }, 15_000);
+    throw new Error("Request timed out");
+  }, 35000);
   const res = await $fetch<T>(url, {
     ...fetchOptions,
     signal: controller.signal,

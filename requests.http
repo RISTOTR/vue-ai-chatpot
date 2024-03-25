@@ -5,8 +5,17 @@ Content-Type: application/json
 Authorization: Bearer {{$dotenv NUXT_OPENAI_API_KEY}}
 
 {
-  "model": "gpt-3.5-turbo",
+  "model": "gpt-4",
   "messages": [{"role": "user", "content": "Say this is a test!"}],
   "temperature": 0,
   "n": 1
+}
+
+###
+POST http://localhost:3000/api/ai
+Content-Type: application/json
+
+{
+  "agent": "facebookAgent",
+  "url": "https://elpais.com/internacional/2024-03-23/los-medios-rusos-senalan-a-ciudadanos-de-tayikistan-como-sospechosos-del-atentado-de-moscu.html"
 }
